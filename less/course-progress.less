@@ -1,0 +1,32 @@
+.page.shows-progress {
+    padding-bottom: @item-padding * 2;
+}
+
+#course-progress {
+    background-color: @background-color-inverted;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+
+    .block-inner {
+        padding: @item-padding 0;
+    }
+
+    .progress-bar {
+        background-color: darken(@background-color-inverted, 20%);;
+        height: 10px;
+
+        &.complete {
+            background-color: @primary-color;
+        }
+    }
+
+    .progress-percent-complete {
+        color: @foreground-color-inverted;
+        font-size: 0.9em;
+        font-weight: bold;
+        margin: @item-margin 0;
+        text-align: right;
+    }
+}

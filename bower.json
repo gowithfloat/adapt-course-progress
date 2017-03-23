@@ -1,0 +1,28 @@
+{
+  "name": "adapt-course-progress",
+  "repository": "git://github.com/gowithfloat/adapt-course-progress.git",
+  "homepage": "https://github.com/gowithfloat/adapt-course-progress",
+  "issues": "https://github.com/gowithfloat/adapt-course-progress/issues",
+  "version": "1.0.0",
+  "framework": "^2.0.0",
+  "authors": [
+    "Daniel Pfeiffer <dpfeiffer@gowithfloat.com>"
+  ],
+  "main": "/js/adapt-course-progress.js",
+  "extension": "adapt-course-progress",
+  "displayName": "Course Progress",
+  "description": "Adds a progress bar to the bottom of each page indicating the overall course completion",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
