@@ -58,12 +58,13 @@ var Progress = Backbone.Model.extend({
      * @param  {Number} totalUnitCount    The total number of units.
      */
     updateProgress: function(completeUnitCount, totalUnitCount) {
+        var percentComplete = totalUnitCount === 0 ? 1 : completeUnitCount / totalUnitCount;
         this.set({
             completeUnitCount: completeUnitCount,
             remainingUnitCount: totalUnitCount - completeUnitCount,
             totalUnitCount: totalUnitCount,
-            percentComplete: completeUnitCount / totalUnitCount,
-            displayPercentComplete: Math.round(completeUnitCount / totalUnitCount * 100)
+            percentComplete: percentComplete,
+            displayPercentComplete: Math.round(percentComplete * 100)
         })
     }
 });
