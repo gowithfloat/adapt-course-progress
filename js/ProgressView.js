@@ -8,7 +8,7 @@ define(function(require) {
 
         render: function() {
             var data = this.model.toJSON();
-            var template = Handlebars.templates["course-progress"];
+            var template = Handlebars.templates["courseProgress"];
             this.$el.html(template(data));
             return this;
         }
